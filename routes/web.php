@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\File\FileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Contact\ContactController;
+use App\Http\Controllers\Import\ImportController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,3 +26,6 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 Route::get('/contacts', [ContactController::class, 'index'])->middleware(['auth'])->name('contact.list');
+Route::get('/import', [ImportController::class, 'index'])->middleware(['auth'])->name('import.index');
+Route::post('/import', [ImportController::class, 'import'])->middleware(['auth'])->name('import.post');
+Route::get('/files', [FileController::class, 'index'])->middleware(['auth'])->name('file.list');

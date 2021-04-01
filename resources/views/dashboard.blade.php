@@ -19,7 +19,7 @@
 
                             <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
                                 <div class="flex items-center">
-                                    <div class="ml-4 text-lg leading-7 font-semibold"><a href="{{ route('login') }}" class="underline text-gray-900 dark:text-white">Import's errors</a></div>
+                                    <div class="ml-4 text-lg leading-7 font-semibold"><a href="{{ route('import.index') }}" class="underline text-gray-900 dark:text-white">Import's errors</a></div>
                                 </div>
                             </div>
                         </div>
@@ -29,13 +29,13 @@
                         <div class="grid grid-cols-1 md:grid-cols-2">
                             <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
                                 <div class="flex items-center">
-                                    <div class="ml-4 text-lg leading-7 font-semibold"><a href="{{ route('register') }}" class="underline text-gray-900 dark:text-white">Files</a></div>
+                                    <div class="ml-4 text-lg leading-7 font-semibold"><a href="{{ route('file.list') }}" class="underline text-gray-900 dark:text-white">Files</a></div>
                                 </div>
                             </div>
 
                             <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
                                 <div class="flex items-center">
-                                    <div class="ml-4 text-lg leading-7 font-semibold"><a href="{{ route('register') }}" class="underline text-gray-900 dark:text-white">Import contacts</a></div>
+                                    <div class="ml-4 text-lg leading-7 font-semibold"><a href="{{ route('import.index') }}" class="underline text-gray-900 dark:text-white">Import contacts</a></div>
                                 </div>
                             </div>
                         </div>

@@ -19,6 +19,7 @@ class File extends Model
     const STATUS_TERMINADO = 'terminado';
 
     protected $fillable = [
+        'user_id',
         'name',
         'path',
         'status'

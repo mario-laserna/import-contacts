@@ -19,6 +19,6 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
         ]);
 
-        Contact::factory(50)->create();
+        // Contact::factory(50)->create();
     }
 }
