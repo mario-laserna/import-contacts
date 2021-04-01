@@ -2,6 +2,7 @@
 
 namespace App\Models\contact;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,4 +14,8 @@ class ContactError extends Model
         'contact',
         'errors'
     ];
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 }

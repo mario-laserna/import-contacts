@@ -3,6 +3,8 @@
 namespace App\Models;
 
 use App\Models\contact\Contact;
+use App\Models\contact\ContactError;
+use App\Models\file\File;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -44,5 +46,13 @@ class User extends Authenticatable
 
     public function contacts(){
         return $this->hasMany(Contact::class);
+    }
+
+    public function contactErrors(){
+        return $this->hasMany(ContactError::class);
+    }
+
+    public function files(){
+        return $this->hasMany(File::class);
     }
 }
