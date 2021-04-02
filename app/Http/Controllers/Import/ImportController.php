@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Import;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Import\CsvFileRequest;
+use App\Jobs\ProcessCsvFile;
 use App\Services\FileService;
 
 class ImportController extends Controller
@@ -20,8 +21,16 @@ class ImportController extends Controller
 
     public function import(CsvFileRequest $request) {
         $file_path = $request->csv_file->store('file');
-        $new_file = $this->fileService->storeFile($file_path);
+        $filename = $request->file('csv_file')->getClientOriginalName();
+        $new_file = $this->fileService->storeFile($file_path, $filename);
 
-        dd($new_file);
+        //Se dispara job para procesamiento, validacion del archivo
+        ProcessCsvFile::dispatch($new_file);
+
+        $message = "El archivo será procesado";
+
+        return view('import.import', [
+            'message' => $message
+        ]);
     }
 }

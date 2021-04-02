@@ -9,10 +9,10 @@ use Illuminate\Support\Facades\Auth;
 
 class FileService
 {
-    public function storeFile($path){
+    public function storeFile($path, $name){
         $new_file = File::create([
             'user_id' => Auth::id(),
-            'name' => 'test',
+            'name' => $name,
             'path' => $path,
             'status' => File::STATUS_EN_ESPERA
         ]);

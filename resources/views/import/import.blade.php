@@ -13,6 +13,12 @@
                     <!-- Validation Errors -->
                     <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
+                    @isset($message)
+                        <div class="font-medium text-blue-600">
+                            {{ $message }}
+                        </div>
+                    @endisset
+
                     <form action="{{ route('import.post') }}" method="post" enctype="multipart/form-data">
                         @csrf
 
