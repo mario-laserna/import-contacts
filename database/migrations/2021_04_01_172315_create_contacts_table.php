@@ -21,7 +21,8 @@ class CreateContactsTable extends Migration
             $table->string('phone_number');
             $table->string('address');
             $table->string('credit_card');
-            $table->string('franchise');
+            $table->string('credit_card_last');
+            $table->string('brand');
             $table->string('email');
             $table->timestamps();
 
