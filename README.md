@@ -17,9 +17,8 @@ Para el procesamiento en batch del archivo csv se utiliza un Job que se ejecuta 
 (se debe configurar en el .env el driver a database u otro), para ejecutar
 la cola por favor realizar `php artisan queue:work`
 
-
-
 ### Usuario
 Usuario de prueba mario@test.com y contraseña test2021, tambien puede crear uno mediante el formulario de registro
 
-
+### Archivo de pruebas
+En la raíz del proyecto se puede encontrar el archivo `test2.csv` con data de ejemplo para realizar la carga del archivo

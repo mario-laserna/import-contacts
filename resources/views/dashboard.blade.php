@@ -19,7 +19,7 @@
 
                             <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
                                 <div class="flex items-center">
-                                    <div class="ml-4 text-lg leading-7 font-semibold"><a href="{{ route('import.index') }}" class="underline text-gray-900 dark:text-white">Import's errors</a></div>
+                                    <div class="ml-4 text-lg leading-7 font-semibold"><a href="#" class="underline text-gray-900 dark:text-white">Import's errors</a></div>
                                 </div>
                             </div>
                         </div>
