@@ -3,14 +3,23 @@
 Web application based on Laravel. Koombea's technical assestment
 
 
-## Steps to deploy
+## Instrucciones
 
-### Download repository
+### Setup del proyecto
 
-### Install and use
+Por favor descargue o clone este repositorio, una vez lo haya hecho, al ser un proyecto laravel, por favor ejecute
+`composer update`
+
+Para ejecutar las migraciones y seeder por favor ejecute
+`php artisan:migrate --seed`
+
+Para el procesamiento en batch del archivo csv se utiliza un Job que se ejecuta de manera asincrona 
+(se debe configurar en el .env el driver a database u otro), para ejecutar
+la cola por favor realizar `php artisan queue:work`
 
 
-### User
-You can use user mario@test.com and password test2021, you also can create a new user in register page
+
+### Usuario
+Usuario de prueba mario@test.com y contraseña test2021, tambien puede crear uno mediante el formulario de registro
 
 

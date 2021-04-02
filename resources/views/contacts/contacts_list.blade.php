@@ -17,7 +17,7 @@
                                 <th>Phone number</th>
                                 <th>Address</th>
                                 <th>Credit Card</th>
-                                <th>Franchise</th>
+                                <th>Brand</th>
                                 <th>Email</th>
                             </tr>
                         </thead>
@@ -29,7 +29,7 @@
                                     <td class="border border-solid">{{ $contact->phone_number }}</td>
                                     <td class="border border-solid">{{ $contact->address }}</td>
                                     <td class="border border-solid">{{ $contact->credit_card_last }}</td>
-                                    <td class="border border-solid">{{ $contact->franchise }}</td>
+                                    <td class="border border-solid">{{ $contact->brand }}</td>
                                     <td class="border border-solid">{{ $contact->email }}</td>
                                 </tr>
                             @endforeach

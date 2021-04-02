@@ -22,7 +22,7 @@ class CreateContactsTable extends Migration
             $table->string('address');
             $table->string('credit_card');
             $table->string('credit_card_last');
-            $table->string('franchise');
+            $table->string('brand');
             $table->string('email');
             $table->timestamps();
 

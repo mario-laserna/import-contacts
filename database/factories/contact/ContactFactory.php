@@ -27,10 +27,10 @@ class ContactFactory extends Factory
             'name' => $this->faker->name,
             'birthdate' => $this->faker->date(),
             'phone_number' => $this->faker->phoneNumber,
-            'address' => $this->faker->address,
+            'address' => $this->faker->streetAddress,
             'credit_card' => $this->faker->sha1,
             'credit_card_last' => 5555,
-            'franchise' => $this->faker->text(50),
+            'brand' => $this->faker->text(8),
             'email' => $this->faker->safeEmail,
 
         ];

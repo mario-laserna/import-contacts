@@ -12,12 +12,14 @@ class Contact extends Model
     use HasFactory;
 
     protected $fillable = [
+        'user_id',
         'name',
         'birthdate',
         'phone_number',
         'address',
         'credit_card',
-        'franchise',
+        'credit_card_last',
+        'brand',
         'email'
     ];
 
